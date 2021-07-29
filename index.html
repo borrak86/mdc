@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="closet to">
+    <meta name="keywords" content="니트,오피스룩,오오티디">
+    <title> modoocloset </title>
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="css/reset.css" rel="stylesheet"/>
+    <link href="css/navslide.css" rel="stylesheet"/>
+    <link href="css/slick.css" rel="stylesheet"/>
+    <link href="css/slick-theme.css" rel="stylesheet"/>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script>
+        $(document).ready(function(){
+       $('#menu1').on('click',function(){
+           if($(this).hasClass('open')){
+               $(this).removeClass('open');
+               $('#menupop').fadeOut(250);
+               $('#box1_1_1').css('display','block');
+               
+           }
+           else{
+               $(this).addClass('open');
+               $('#menupop').fadeIn(250);
+               $('#box1_1_1').css('display','none');
+           }
+       }) 
+    });
+        $(document).ready(function(){
+       $('#menu2').on('click',function(){
+           if($(this).hasClass('open')){
+               $(this).removeClass('open');
+               $('#join').fadeOut(250);
+               $('#box1_1_1').css('display','block');
+               
+           }
+           else{
+               $(this).addClass('open');
+               $('#join').fadeIn(250);
+               $('#box1_1_1').css('display','none');
+           }
+       }) 
+    });
+        $(function(){
+	   $('.autoplay').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        });
+        });
+        
+          $(function(){
+	   $('.autoplay2').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1300,
+        });
+        });
+        
+           $(function(){
+	   $('.autoplay3').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        });
+        });
+        
+        $(function(){
+	   $('.autoplay4').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        });
+        });
+        
+          $(function(){
+	   $('.autoplay5').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1300,
+        });
+        });
+        
+           $(function(){
+	   $('.autoplay6').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000,
+        });
+        });
+        
+</script>
+<style>
+    body{height: 4300px;overflow-x: hidden;}
+    header #logo{position: absolute;left: 50%;top: 3em;margin-left: -100px;width: 200px;height: 25px;background-color: rgba(0,0,0,.5);z-index: 999;}
+    
+    #box1{position: relative;width: 100%;height: 990px;padding: 90px;box-sizing: border-box;float: left;transition: .5s}
+    
+    #box1_1{width: 100%;height: 100%;position: relative;background:url(images/mainimg.png) no-repeat;background-attachment: fixed;background-size: cover;background-position: center}
+    
+    #box2{position: absolute;width: 650px;height: 700px;background-color: rgba(0,0,0,.3);top: 50%;left: 50%;margin-top: -350px;margin-left: -325px;}
+    #box1_1_1 ul{position: relative;padding-top: 150px;max-width: 450px; width: 100%;box-sizing: border-box;margin: 0 auto;}
+    #box1_1_1 ul li{width: 100%;}
+    #box1_1_1 ul li span{display: block}
+    #box1_1_1 ul li:nth-of-type(1){text-align: left;position: relative;font-weight: bold;margin-left: 10px;}
+    #box1_1_1 ul li:nth-of-type(2){text-align: right;color: #fff;font-style: italic;font: 1.2em mistral;margin-top: -30px;}
+    .batang {color: #000;font: 90px batang;font-weight: 900;text-decoration: none;text-align: center;}
+    #box1_1_1 ul li:nth-of-type(4) span{width: 258px;height: 112px;background-color: rgba(0,0,0,.3);margin-top:-60px;}
+    #box1_1_1 ul li:nth-of-type(5) {text-align: left;margin-top: -60px;margin-left: 230px;width: 300px;}
+    #box1_1_1 ul li:nth-of-type(6){font-style: italic;font-weight: bold;margin-left: 20px;margin-top: 30px;}
+    #box1_1_1 ul li:nth-of-type(7){text-align: right;color: #fff;font-style: italic;font: 1.5em mistral;}
+    
+    #background{position: absolute;top: 0;left: 0; width: 100%;height:990px;float: left;}
+    #background div:nth-of-type(1){position: absolute;top: 0;left: 0;width:160px;height:160px;background: url(images/bg1.svg) no-repeat;}
+    #background div:nth-of-type(2){position: absolute;top: 0;right: 0;width:160px;height:160px;background: url(images/bg3.svg) no-repeat;}
+    #background div:nth-of-type(){position: relative;top: 84%;width:160px;height:160px;background:url(images/bg2.svg) no-repeat;float: left;}
+    #background div:nth-of-type(){position: relative;top: 84%;left: 83.2%;width:160px;height:160px;background:url(images/bg4.svg) no-repeat;z-index: 9999;float: left;}
+    #background div span{border: .8px solid #000;position: absolute;left: 50%;top: 0;width: 0;height: 180px;z-index: 100;}
+    /*#background .left{position: absolute;top: 50%;width: 90px;height: 0;border: .5px solid #000;}
+    #background .right{position: absolute;right: 0;top: 50%;width: 90px;height: 0;border: .5px solid #000;}*/
+    #menu1{position: absolute;top: 50%;left: 0;z-index: 9999;transform: rotate(-90deg);}
+   
+    #menu2{position: absolute;top: 50%;right: 0;z-index: 9999;transform: rotate(90deg);}
+    nav a{font-weight: bold;transition: 0.4s ease-in-out;letter-spacing: 0.1em;text-align: center;display: block;}
+    nav span{display: block;width: 120px;height: 0;border: .3px solid #000;}
+    #menu1:hover a{letter-spacing: 1.5em;text-decoration: none;}
+    #menu2:hover a{letter-spacing: 0.6em;text-decoration: none;}
+    
+    #menupop{position: absolute;left: 0;top: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0);z-index: 1000;display: none;box-sizing: border-box;}
+    #menupop ul{margin-top: 200px;text-align: center;}
+    #menupop ul li a{display: block;color: #000;font-size: 1.5em;line-height: 2.5em;text-decoration: none}
+    #menupop ul li span{width: 100px;height: 7px;z-index: 9999;border-top: 1px solid;display: none;margin-left: -80px;}
+    #menupop ul li:nth-of-type(2) a{}
+    #menupop ul li:nth-of-type(3) a{color: #fff;margin-right: 100px;line-height: 1.5em;}
+    #menupop ul li:nth-of-type(4) a{color: #fff;margin-right: 300px;line-height: 1.5em;}
+    #menupop ul li:nth-of-type(5) a{color: #fff;margin-left: 200px;line-height: 1.5em;}
+    #menupop ul li:nth-of-type(6) a{color: #fff;margin-left: 100px;line-height: 1.5em;}
+    #menupop ul li:nth-of-type(7) a{color: #fff;margin-right: 150px;line-height: 1.5em;}
+    #menupop ul li:nth-of-type(8) a{color: #fff;margin-right: 50px;line-height: 1.5em;}
+    #menupop ul li:hover span{display: inline-block;}
+    #menupop ul li:hover a{font-weight: bold}
+    
+    #join{position: absolute;left: 0;top: 0;width: 100%;height: 100%;display: none}
+    #join ul{margin-top: 200px;text-align: center;}
+    #join a{color: #000;font-size: 1.5em;line-height: 2.5em;text-decoration: none;}
+    #join span{width: 100px;height: 7px;z-index: 9999;border-top: 1px solid #000;display: none;margin-left: -80px;}
+    #join ul li:hover a{font-weight: bold;}
+    #join ul li:hover span{display: inline-block}
+    
+    #My{display: none}
+    
+    #main1{position: relative;margin: 0 auto;width: 100%;box-sizing: border-box;}
+    #main1 img{margin-top: 100px;width: 100%;min-width: 300px;max-width: 779px;}
+    
+    section>h2{margin-left: 10px;}
+    #main2{ width:100%; height:100%;margin:0 auto;overflow: hidden;}
+    #main2 h3{ width:100%; height:100%;box-sizing:border-box; padding:2%;}
+    #main2 h3 img{ width:100%; height:auto;}
+    #main22{ width:100%; height:100%;margin:0 auto;overflow: hidden;}
+    #main22 h3{ width:100%; height:100%;box-sizing:border-box; padding:2%;}
+    #main22 h3 img{ width:100%; height:auto;}
+    #main23{ width:100%; height:100%;margin:0 auto;overflow: hidden;}
+    #main23 h3{ width:100%; height:100%;box-sizing:border-box; padding:2%;}
+    #main23 h3 img{ width:100%; height:auto;}
+    
+    #main3{position: relative; width: 100%;height: 600px;box-sizing: border-box;padding: 180px;float: left;}
+    #main3 div{width: 100%;height: 100%;background-image: url(images/fix1300.png);background-attachment: fixed;background-repeat: no-repeat;background-position: center}
+    
+    #main4{ width:100%; height:100%;margin:0 auto;overflow: hidden;}
+    #main4 h3{ width:100%; height:100%;box-sizing:border-box; padding:2%;}
+    #main4 h3 img{ width:100%; height:auto;}
+    #main42{ width:100%; height:100%;margin:0 auto;overflow: hidden;}
+    #main42 h3{ width:100%; height:100%;box-sizing:border-box; padding:2%;}
+    #main42 h3 img{ width:100%; height:auto;}
+    #main43{ width:100%; height:100%;margin:0 auto;overflow: hidden;}
+    #main43 h3{ width:100%; height:100%;box-sizing:border-box; padding:2%;}
+    #main43 h3 img{ width:100%; height:auto;}
+    
+    #main5{position: relative;width: 1220px;height: 605px;box-sizing: border-box;float: left;overflow: hidden;margin: 250px 0;left: 50%;margin-left: -610px}
+    #acc .color{display: block;width:300px;height:300px;overflow: hidden}
+    #acc div{float: left;margin-left: 5px}
+    #acc div:nth-of-type(2) .color{background-color: rgba(69,70,64,.7);}
+    #acc div:nth-of-type(7) .color{background-color: rgba(18,20,23,.7);}
+    #acc div:nth-of-type(9) .color{background-color: rgba(164,155,131,.7);}
+    #acc span{display: block;font-size: 20px;color: #fff;text-align:center;}
+    #tx1{position: relative;top: 105px;opacity: 0;transition: .5s}
+    #tx1_1{font-style: italic;animation: move 5s 3;z-index: 9999}
+    #tx2{position: relative;animation: move1 4s 3;}
+    #tx3{position: relative;top: 50px;font-weight: bold;right: -150px;transition: .5s}
+    #acc div:nth-of-type(2) span:hover #tx1{opacity: 1}
+    #acc div:nth-of-type(9) span:hover #tx3{right: 50px;}
+    
+    @keyframes move{
+        0%{transform: translate(220px,100px)}
+        50%{transform: translate(-35px,100px)}
+        100%{transform: translate(220px,100px)}
+    }
+    @keyframes move1{
+        0%{transform: translate(0,-50px)}
+        50%{transform: translate(0,130px)}
+        100%{transform: translate(0,-50px)}
+    }
+    
+    #main6{position: relative;width: 100%;height: 250px;float: left;overflow: hidden}
+    #insta{position: relative; width: 100%;height: 100%;background-color: #ddd;padding-left: 100px}
+    #instalogo{position: relative;width: 60px;height: 60px;background-repeat: no-repeat;float: left;top: 50px;left: 20px;background-image: url(images/sns_icon_03.png)}
+    #instaPics img{border: 2px solid #fff;float: left;position: relative;margin-bottom: 100px;left: 100px;}
+    #instaPics{overflow: hidden}
+    #instaId{padding-top: 50px;padding-bottom: 5px;position: relative; left: 40px;}
+ 
+    /* iPhone */
+    @media only screen and (max-width : 767px) {  
+      body {height: 2500px;}
+        #box1{padding: 0;height: 600px;}
+        #box1_1_1 ul li:nth-of-type(4) span{display: none}
+        #box1_1_1 ul li:nth-of-type(5){display: none}
+        .batang{font: 60px batang;font-weight: 700;}
+        #box1_1_1 ul li:nth-of-type(3){margin-top: 25px;}
+        header #logo{top: 1em;}
+        #menu1{position: fixed;top: 3em;z-index: 9999;transform: rotate(0);left: 50%;margin-left: -60px;}
+        #menu1 a{color: #000;}
+        #menu2{display: none;}
+        #box1_1_1 ul{padding-top: 100px;width: 100%;max-width: 300px}
+        #box2{display: none}
+        #menupop ul{margin-top: 120px}
+        #main2{display: none}
+        #main22{display: none}
+        #main1 img{margin: 150px 0}
+        #main3{height: 120px;padding: 0;margin: 100px 0;}
+        #main4{display: none}
+        #main42{display: none}
+        #main5{width: 360px;height:715px;left: 50%;margin-left: -180px;box-sizing: border-box;margin-top: 100px;float: left;}
+        #main5 div{width: 174px;float: left;}
+        #main5 img{width: 100%;float: left;}
+        #acc .color{width: 174px;height: 174px;display: block;float: left;}
+        #acc div{margin:3px;}
+        #insta{padding-left: 0;}
+        #instaId{padding-top: 20px;left: 0;}
+        #instalogo{top: 20px;background-image: url(images/sns_icon_04.png);}
+        #main6{height: 210px;top: -100px;}
+        #instaPics img{left: 0;border: 1px solid #fff;}
+    }
+    
+    /* iPads (portrait and landscape)  */
+    @media only screen and (min-width : 768px) and (max-width : 1024px) {  
+      body {height: 3500px;}
+        #box1{padding: 60px;height: 850px;}
+        #box1_1{width: 100%;height: 100%;position: relative;background:url(images/mainimg-m.png) no-repeat;background-attachment: fixed;background-size: cover;background-position: center}
+        #menu1 a{color: #000;}
+        #menu2 a{color: #000;}
+        #box1_1_1 ul{max-width: 400px;width: 100%;}
+        #box2{display: none}
+        #menupop ul{margin-top: 170px}
+        #main1{padding: 15%}
+        #main2{display: none}
+        #main23{display: none}
+        #main3{padding: 100px;height: 400px;}
+        #main4{display: none}
+        #main43{display: none}
+        #main5{width: 655px;height: 655px;left: 50%;margin-left: -327px;box-sizing: border-box;margin-top: 100px}
+        #main5 div{width: 210px;}
+        #main5 img{width: 100%;}
+        #acc .color{width: 210px;height: 210px;display: block}
+        #acc div{margin-left:5px;}
+        #insta{padding-left: 10px;padding-top: 20px;}
+        #instaId{padding-top: 20px;padding-bottom: 5px}
+        #instalogo{top: 20px;}
+        #instaPics img{left: 40px;}
+    }
+    
+     /* Desktops and laptops */
+     @media only screen
+    and (min-width : 1025px) {  
+        body {}
+        #main1{padding: 25%}
+        #main1 img{margin-top: 200px}
+        #main22{display: none}
+        #main23{display: none}
+        #main42{display: none}
+        #main43{display: none}
+        #acc span{font-size: 28px;}
+        #tx1_!{}
+    }
+        
+    
+
+    
+</style>
+</head>
+<body>
+   <div id="wrap">
+       <header>
+           <div id="logo"><span></span></div>
+       </header>
+       <section id="wrap_contents">
+    <!--배경영역-->
+        <article id="background">
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+                <div class="side"></div>
+                <div><span></span></div>
+            <!--
+                <div class="left"></div>
+                <div class="right"></div>
+                -->
+    <!--양쪽메뉴네비-->
+                <nav id="menu1">
+             <a href="#">MENU</a><span></span></nav>
+             <nav id="menu2">
+             <a href="#">CONTECT</a><span></span></nav>     
+              </article>
+    <!--메인이미지영역-->
+          <section id="box1">
+              <article id="box1_1">
+                  <div id="box2"></div>                 
+                  <div id="box1_1_1">
+                    <ul>
+                          <li><span>Remember that there is nothing stable in human</span>
+                          <span>affairs; therefore avoid undue elation in prosperity,</span>
+                          <span>or undue depression in adversity.</span></li>
+                          <li><span>A long life may not be good enough, but a good life </span><span>is long enough.</span></li>
+                          <li class="batang"><span>THE WE</span><span>ISSUE</span></li>
+                          <li><span></span></li>
+                          <li><span>To be brave is to love someone un-</span><span>conditionally, without expecting any-</span><span>thing in return. To just give. That</span><span>takes courage, because we don't</span><span>want to fall on our faces or leave our-</span><span>selves open to hurt.</span></li>
+                          <li><span>Immature love says, I love you because I </span>
+                          <span>need you, mature love says, I need you be</span>
+                          <span>cause I love you.</span></li>
+                          <li><span>Tis the most tender part of love, each</span><span>other to forgive.</span></li>
+                      </ul>
+                  </div>
+                  </article>
+          </section>
+    <!--컨텐츠영역-->  
+        <section id="main1">
+              <div><img src="images/text.png" alt=""></div>
+          </section>
+    <!--new슬라이드 main2-->
+          <section id="main2">
+              <h2>neW.</h2>
+              <article class="slider autoplay">
+              <div>
+                  <h3><a href="#"><img src="images/new1.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new2.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new3.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new4.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new5.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new6.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new7.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new8.png" alt=""></a></h3>
+              </div></article>
+          </section>
+         
+          <section id="main22">
+              <h2>neW.</h2>
+              <article class="slider autoplay2">
+              <div>
+                  <h3><a href="#"><img src="images/new21.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new22.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new23.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new24.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new25.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new26.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new27.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new28.png" alt=""></a></h3>
+              </div></article>
+          </section>
+          
+          <section id="main23">
+              <h2>neW.</h2>
+              <article class="slider autoplay3">
+              <div>
+                  <h3><a href="#"><img src="images/new21.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new22.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new23.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new24.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new25.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new26.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new27.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/new28.png" alt=""></a></h3>
+              </div></article>
+          </section>
+          
+          <section id="main3">
+          <div></div></section>
+          
+   <!--best슬라이드 main4-->
+          <section id="main4">
+              <h2>beSt.</h2>
+              <article class="slider autoplay4">
+              <div>
+                  <h3><a href="#"><img src="images/best11.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best12.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best13.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best14.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best15.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best16.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best17.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best18.png" alt=""></a></h3>
+              </div></article>
+          </section>
+          <section id="main42">
+              <h2>beSt.</h2>
+              <article class="slider autoplay5">
+              <div>
+                  <h3><a href="#"><img src="images/best1.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best2.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best3.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best4.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best5.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best6.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best7.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best8.png" alt=""></a></h3>
+              </div></article>
+          </section>
+          <section id="main43">
+              <h2>beSt.</h2>
+              <article class="slider autoplay6">
+              <div>
+                  <h3><a href="#"><img src="images/best1.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best2.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best3.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best4.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best5.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best6.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best7.png" alt=""></a></h3>
+              </div>
+              <div>
+                  <h3><a href="#"><img src="images/best8.png" alt=""></a></h3>
+              </div></article>
+          </section>
+          
+          <section id="main5">
+              <article id="acc">
+                  <div><a href="#"><img src="images/ACC1.png" alt=""></a></div>
+                  <div><a href="#"><span class="color"><span id="tx1">2018 S/S</span><span id="tx1_1">NEW ITEM</span></span></a></div>
+                  <div><a href="#"><img src="images/ACC2.png" alt=""></a></div>
+                  <div><a href="#"><img src="images/ACC3.png" alt=""></a></div>
+                  <div><a href="#"><img src="images/ACC4.png" alt=""></a></div>
+                  <div><a href="#"><img src="images/ACC5.png" alt=""></a></div>
+                  <div><a href="#"><span class="color"><span id="tx2">ACCESORY</span></span></a></div>
+                  <div><a href="#"><img src="images/ACC6.png" alt=""></a></div>
+                  <div><a href="#"><span class="color"><span id="tx3">LOVE IT</span></span></a></div>
+              </article>
+          </section>
+          <section id="main6">
+              <article id="insta">
+                <div id="instaWrap">
+                 <div id="instalogo"></div>
+                 <div id="instaId"><a href="https://www.instagram.com/modoocloset/">@modoocloset</a></div>
+                  <div id="instaPics">
+                      <ul>
+                          <li><img src="images/insta1.png" alt=""></li>
+                          <li><img src="images/insta2.png" alt=""></li>
+                          <li><img src="images/insta3.png" alt=""></li>
+                          <li><img src="images/insta4.png" alt=""></li>
+                          <li><img src="images/insta5.png" alt=""></li>
+                          <li><img src="images/insta6.png" alt=""></li>
+                          <li><img src="images/insta7.png" alt=""></li>
+                          <li><img src="images/insta8.png" alt=""></li>
+                          <li><img src="images/insta9.png" alt=""></li>
+                          <li><img src="images/insta10.png" alt=""></li>
+                          <li><img src="images/insta11.png" alt=""></li>
+                      </ul>
+                  </div></div>
+              </article>
+          </section>
+       </section>
+       <footer><div id="footerwrap"></div></footer>
+    <!--팝업메뉴영역-->
+       <div id="menupop">
+           <ul>
+               <li><a href="#">MENU<span></span></a></li>
+               <li><a href="#">NEW<span></span></a></li>
+               <li><a href="#">OUTER<span></span></a></li>
+               <li><a href="#">TOP<span></span></a></li>
+               <li><a href="#">BOTTOM<span></span></a></li>
+               <li><a href="#">ONEPIECE<span></span></a></li>
+               <li><a href="#">SHOES<span></span></a></li>
+               <li><a href="#">ACC<span></span></a></li>
+               <li><a href="#">EVENT<span></span></a></li>
+               <li><a href="#">JOIN US<span></span></a></li>
+               <li><a href="#">My PAGE<span></span></a></li>
+           </ul>
+       </div>
+       <div id="join">
+           <ul>
+               <li><a href="#">JOIN US<span></span></a></li>
+               <li><a href="#">QnA<span></span></a></li>
+               <li><a href="#">SNS<span></span></a></li>
+               <li><a href="#">APP<span></span></a></li>
+               <li><a href="#">LOGIN<span></span></a></li>
+               <li><a href="#">회원가입<span></span></a></li>
+               <li><a href="#">MENU<span></span></a></li>
+           </ul>
+       </div>
+       <div id="My">
+           <ul>
+               <li><a href="#">My PAGE</a><span></span></li>
+               <li><a href="#">My QnA</a></li>
+               <li><a href="#">POINT</a></li>
+               <li><a href="#">장바구니</a></li>
+               <li><a href="#">주문내역</a></li>
+               <li><a href="#">회원정보수정</a></li>
+               <li><a href="#">MENU</a></li>
+           </ul>
+       </div>
+       
+   </div>
+    
+</body>
+</html>
